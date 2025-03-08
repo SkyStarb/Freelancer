@@ -5,24 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador freelancer</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Estrella Paz Freelancer</h1>
+        <h1 class="titulo">Estrella
+            <span>Freelancer</span>
+        </h1>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contactos</a>
-    </nav>
-    <img src="img/hero.jpg" alt="">
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contactos</a>
+        </nav>
+    </div>
     <section>
-        <h2>Diseño y Desarrollo Web Freelancer</h2>
+        <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" width="36" height="36" stroke-width="1.25">
+            stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
             <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
             <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
         </svg>
@@ -89,9 +99,35 @@
     <section>
         <h2>Contacto</h2>
         <form>
-            <fieldset>Contactanos llenando todo el  </fieldset>
-        </form>
+            <legend>Contactanos llenando todos los campos</legend>
+            <div>
+                <labeltext>Nombre</label>
+                    <input type="text" placeholder="Tu nombre">
+            </div>
 
+            <div>
+                <labeltext>Telefono</label>
+                    <input type="tel" placeholder="Tu telefono">
+            </div>
+
+            <div>
+                <labeltext>Correo</label>
+                    <input type="email" placeholder="Tu Email">
+
+            </div>
+
+            <div>
+                <label>Mensaje</label>
+                <textarea> </textarea>
+
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+
+            </div>
+
+        </form>
     </section>
 
     <footer>
