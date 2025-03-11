@@ -3,16 +3,20 @@
     --oscuro: #f5f5f5;
     --primario: rgb(255, 131, 172);
     --secundario: #607D8B;
-    --pastel:rgb(255, 234, 167) ;
+    --pastel: rgb(255, 234, 167);
+    --letra: #ffffff;
+    
 }
 
 
 
-html{
+html {
     font-size: 65.5%;
 }
-body{
-    font-size: 16px; /* 1 rem = 10px */
+
+body {
+    font-size: 16px;
+    /* 1 rem = 10px */
     font-family: "Krub", sans-serif;
 }
 
@@ -21,18 +25,39 @@ body{
     text-align: center;
     font-size: 3.8rem;
 }
+
 .titulo span {
     font-size: 2rem;
 }
 
 .contenedor {
     width: 120rem;
-   margin: 0 auto;
+    margin: 0 auto;
 }
 
 .nav-bg {
     background-color: var(--primario);
 
 }
+
 .navegacion-principal {
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--letra);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem; 
+}
+.navegacion-principal a:hover {
+    background-color:  var(--secundario);
+    color: rgb(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+   
 }
