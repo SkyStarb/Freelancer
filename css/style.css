@@ -12,7 +12,7 @@
 
 html {
     font-size: 65.5%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* hack para que el padding y margin no afecten el ancho y alto de los elementos */
 }
 
 *,
@@ -25,6 +25,7 @@ body {
     font-size: 16px;
     /* 1 rem = 10px */
     font-family: "Krub", sans-serif;
+    background-image: linear-gradient(to top,  rgb(255, 183, 225) 0%, rgb(255, 255, 255) 10%);
 }
 
 h1 {
