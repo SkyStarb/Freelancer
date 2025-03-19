@@ -145,3 +145,32 @@ h3 {
 .contenido-hero p {
     color: var(--letra);
 }
+
+.servicios {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    /* es igual a repeat(3, 1fr)*/
+    column-gap: 1rem;
+
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
+.servicio p {
+    line-height: 2;
+}
+.servicio .iconos {
+    height: 15rem ;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
